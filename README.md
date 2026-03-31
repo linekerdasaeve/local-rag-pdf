@@ -9,7 +9,7 @@ Como este projeto não utiliza APIs externas na nuvem, precisamos instalar e rod
 1. Baixe e instale o Ollama em: [https://ollama.com/download](https://ollama.com/download)
 2. Após a instalação, abra o seu terminal e execute os três comandos abaixo para baixar os modelos necessários e iniciar o servidor:
 
-Baixa o modelo de linguagem (LLM) que vai gerar as respostas
+# Baixa o modelo de linguagem (LLM) que vai gerar as respostas
 	```bash
 	ollama pull mistral
 
