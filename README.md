@@ -9,14 +9,19 @@ Como este projeto não utiliza APIs externas na nuvem, precisamos instalar e rod
 1. Baixe e instale o Ollama em: [https://ollama.com/download](https://ollama.com/download)
 2. Após a instalação, abra o seu terminal e execute os três comandos abaixo para baixar os modelos necessários e iniciar o servidor:
 
+Baixa o modelo de linguagem (LLM) que vai gerar as respostas
+
 ```bash
-# Baixa o modelo de linguagem (LLM) que vai gerar as respostas
 ollama pull mistral
 
 # Baixa o modelo de embeddings responsável por vetorizar os textos
+
+```bash
 ollama pull nomic-embed-text
 
 # Inicia o servidor do Ollama (caso não inicie automaticamente)
+
+```bash
 ollama serve
 
 
@@ -79,3 +84,4 @@ Para garantir que o RAG está respondendo corretamente, você pode alterar os ca
 
 	```bash
 	pytest test_rag.py
+
