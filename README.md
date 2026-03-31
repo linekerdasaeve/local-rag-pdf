@@ -11,18 +11,18 @@ Como este projeto não utiliza APIs externas na nuvem, precisamos instalar e rod
 
 Baixa o modelo de linguagem (LLM) que vai gerar as respostas
 
-```bash
-ollama pull mistral
+	```bash
+	ollama pull mistral
 
 # Baixa o modelo de embeddings responsável por vetorizar os textos
 
-```bash
-ollama pull nomic-embed-text
+	```bash
+	ollama pull nomic-embed-text
 
 # Inicia o servidor do Ollama (caso não inicie automaticamente)
 
-```bash
-ollama serve
+	```bash
+	ollama serve
 
 
 ## 📂 Estrutura do Projeto
