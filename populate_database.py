@@ -18,7 +18,6 @@ DATA_PATH = "data"
 def main():
 
     # Veja se o banco de dados deve ser limpo, se precisar use [python populate_database.py --reset]
-    # Check if the database should be cleared (using the --clear flag).
     parser = argparse.ArgumentParser()
     parser.add_argument("--reset", action="store_true", help="Reset the database.")
     args = parser.parse_args()
@@ -57,7 +56,6 @@ def add_to_chroma(chunks: list[Document]):
     chunks_with_ids = calculate_chunk_ids(chunks)
 
     # Adiciona ou Atualiza os documentos
-
     existing_items = db.get(include=[])  # Os IDS semper são incluidos por padrão
     existing_ids = set(existing_items["ids"])
     print(f"Número de documentos existentes no banco de dados: {len(existing_ids)}")
