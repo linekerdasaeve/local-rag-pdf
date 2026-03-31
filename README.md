@@ -62,17 +62,17 @@ Se você quiser clonar este projeto e rodá-lo na sua própria máquina, siga os
 4. **Adicione os seus documentos: :**
 Cole os arquivos em PDF que você deseja analisar dentro da pasta data/. Exemplo: data/meu_documento.pdf
 	
-5. ** Rode o arquivo populate_database.py que alimenta o banco de dados vetorial, ou limpe usando --reset**
+5. **Rode o arquivo populate_database.py que alimenta o banco de dados vetorial, ou limpe usando --reset**
 	```bash
 	python populate_database.py
 	
 (Dica: Se precisar atualizar os documentos do zero, limpe o banco rodando python populate_database.py --reset)
 	
-6. ** Faça suas perguntas ao modelo:**
+6. **Faça suas perguntas ao modelo:**
 	```bash
 	python query_data.py "Quantas cartas de imagem vêm no jogo Dixit?"
 
-7. ** Avalie a integridade do modelo (Opcional):**
+7. **Avalie a integridade do modelo (Opcional):**
 Para garantir que o RAG está respondendo corretamente, você pode alterar os casos de teste no arquivo test_rag.py com perguntas e respostas esperadas baseadas nos seus PDFs, e então rodar:
 
 	```bash
