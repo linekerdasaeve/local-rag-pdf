@@ -22,7 +22,7 @@ Responda a pergunta com base no contexto acima:
 """
 
 def main():
-    # Cria a interface de linha de comando (CLI).
+    # Cria a interface de linha de comando
     # Isso permite rodar o script diretamente no terminal passando a pergunta.
     # Exemplo: python query_data.py "Quantas cartas tem no Dixit?"
     parser = argparse.ArgumentParser()
